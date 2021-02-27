@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Family Album</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My Family Album</h1>
+        <br><br><br><br><br><br><br><br>
+        <br>
+        <label id="lab">Pankaj Mittal (My Father)</label>
+        <hr>
+        <button onclick="next()">Next</button>
+        <hr>
+
+        <script>
+            var text=("Hema Mittal (My Mother)","Keerthi Vardhan Mittal (Me)","Lavyansh Mittal (My Little Brother)","Pankaj Mittal (My Father)");
+            var i="0"
+            function next(){
+                document.getElementById("lab").src= text[i];
+   i++;
+   if(i>3){
+     i = 0
+ }
+}
+        </script>
+    </body>
+</html>
